@@ -4,7 +4,7 @@ import 'package:totonaco_aplication/src/pages/Practica.dart';
 
 
 
-final liquidPages = [
+List<Widget> liquidPages = [
   Card(
     color: Colors.teal[400],
     child: Center(
@@ -176,5 +176,10 @@ practica() {
 
 escucha() {
   //Navigator.push(context, MaterialPageRoute(builder: (context) => Escucha()));
+}
+
+addButton(ElevatedButton button) {
+liquidPages.add(button);
+  
 }
 
